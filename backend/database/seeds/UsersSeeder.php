@@ -24,6 +24,10 @@ class UsersSeeder extends Seeder
             ]
         ];
 
-        \DB::table('users')->insert($users);
+        try {
+            \DB::table('users')->insert($users);
+        }catch (\Exception $e){
+
+        }
     }
 }

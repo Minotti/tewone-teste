@@ -29,6 +29,8 @@ class SpecialitiesSeeder extends Seeder
             ['name' => 'CLÍNICA MÉDICA'],
         ];
 
-        \DB::table('specialities')->insert($specialities);
+        if(!\App\Models\Specialities::find(1)) {
+            \DB::table('specialities')->insert($specialities);
+        }
     }
 }
