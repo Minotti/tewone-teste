@@ -1,5 +1,7 @@
 # Teste TewOne!
 
+  - Pré requisito para iniciar o projeto: Tenha o docker funcionando corretamente em sua máquina. Para isso veja **https://docs.docker.com/install/** e também docker-compose **https://docs.docker.com/compose/install/**.
+  
   - Baixe o repositório **git clone https://github.com/Minotti/tewone-teste.git**
   - Acesse a pasta criada e execute **./build.sh** em seu terminal e aguarde o processo concluir, pode demorar alguns minutos.
     > Isto criará os containers, banco, tabelas e seeders do backend e deixará frontend acessível atráves da url que será criada
