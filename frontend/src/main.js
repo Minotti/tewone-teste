@@ -1,0 +1,25 @@
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
+import axios from 'axios'
+import BlockUI from 'vue-blockui'
+import VueSimpleAlert from 'vue-simple-alert'
+
+const token = localStorage.getItem('token')
+
+Vue.use(BlockUI)
+Vue.use(VueSimpleAlert)
+
+axios.defaults.baseURL = 'http://0.0.0.0:8000'
+Vue.prototype.$http = axios
+
+if (token) {
+  Vue.prototype.$http.defaults.headers.common['Authorization'] = `Bearer ${token}`
+}
+
+new Vue({
+  router,
+  store,
+  render: h => h(App)
+}).$mount('#app')
