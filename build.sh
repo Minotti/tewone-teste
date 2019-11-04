@@ -8,7 +8,7 @@ php artisan key:generate
 
 docker-compose up -d
 
-sleep 10
+sleep 20
 
 docker exec -it backend_app_1 ./artisan migrate --seed
 docker exec -it backend_app_1 ./artisan passport:install
