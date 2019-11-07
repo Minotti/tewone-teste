@@ -11,7 +11,7 @@ const token = localStorage.getItem('token')
 Vue.use(BlockUI)
 Vue.use(VueSimpleAlert)
 
-axios.defaults.baseURL = 'http://0.0.0.0:8000'
+axios.defaults.baseURL = 'http://127.0.0.1:8000/'
 Vue.prototype.$http = axios
 
 if (token) {
