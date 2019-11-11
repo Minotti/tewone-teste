@@ -18,6 +18,6 @@ Dentro da pasta raiz do projeto você poderá utilizar alguns comandos
 | Comando | Ação |
 | ------ | ------ |
 | ./build.sh | Utilize apenas no início para Criar os volumes, containers, banco etc. |
-| ./start_backnfront.sh | Inicializa os containers e o frontend |
-| ./stop_backend.sh | Derruba os containers do backend (docker-compose down) |
+| ./start.sh | Inicializa os containers, api e front |
+| ./stop.sh | Derruba os containers |
 | ./test.sh | Executa testes utilizando o phpunit |
