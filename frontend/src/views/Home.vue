@@ -37,7 +37,7 @@ export default {
     },
     search () {
       this.blockUI = true
-      this.$http.get(`http://0.0.0.0:8000/api/doctors?search=name:${this.condicao};crm:${this.condicao}`)
+      this.$http.get(`api/doctors?search=name:${this.condicao};crm:${this.condicao}`, { headers: { 'Content-Type': 'application/json' } })
         .then(res => {
           this.dados = res.data.data
           this.next_page_url = res.data.next_page_url
